@@ -1,0 +1,64 @@
+*{
+    margin: 0PX;
+    PADDING:0PX;
+    box-sizing: border-box;
+    
+}
+nav{
+    width: 100%;
+    height: 75px;
+    line-height: 75px;
+    padding: 0px 100px;
+    position: fixed;
+    background-image: linear-gradient(#033747,#012733);
+}
+nav .logo p{
+    font-size: 30px;
+    font-weight: bold;
+    float: left;
+    color: rgb(208, 24, 24);
+    letter-spacing: 1.5px;
+    cursor: pointer;
+
+
+}
+nav ul{
+    float: right;
+
+}
+nav li{
+    display: inline-block;
+    list-style: none;
+
+}
+nav li a{
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 0px 30px;
+    color: white;
+    text-decoration: none;
+}
+nav li a:hover{
+    color: chocolate;
+    transition: all 0.4s ease 0s;
+}
+.background-clip{
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+    z-index: -1;
+}
+@media (min-aspect-ratio:16/9){
+    .background-clip{
+        width: 100%;
+        height: auto;
+
+}
+}
+@media (max-aspect-ratio:16/9){
+    .background-clip{
+        width: auto;
+        height: 100%;
+
+}
+}
